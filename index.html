@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
   </head>
   <body>
     <!-- navbar -->
@@ -33,9 +34,9 @@
             <ul
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Homepage</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
+              <li><a href="#home">Homepage</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skill">My SKill</a></li>
             </ul>
           </div>
         </div>
@@ -79,16 +80,13 @@
 
     <!-- Hero -->
     <section
-      class="hero min-h-screen"
-      style="background-image: url('mobil.jpg');">
-      <div class="hero-overlay bg-opacity-60"></div>
+      class="hero min-h-screen" style="background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDlxejd1NWRjejMyeG1pYjZsaDU1MDdxeW9sd3BlYTFxdWhmaXdrYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/77F1Ogb2A1fy0LESQO/giphy.gif');">
+      <div class="hero-overlay bg-opacity-60" id="home"></div>
       <div class="hero-content text-neutral-content text-center">
         <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+          <h1 class="mb-5 text-5xl font-bold">My Portofolio</h1>
           <p class="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            In My Dream, I want to become a professional programmer, leveraging technology and innovation to drive <br> possitive change.
           </p>
           <button class="btn btn-primary">Get Started</button>
         </div>
@@ -97,7 +95,7 @@
 
     <!-- About -->
      <section class="flex justify-center items-center gap-10 py-20 container mx-auto">
-        <div class="">
+        <div class="" id="about">
             <h1 class="font-bold">About Me</h1>
             <p>Akira Nakai (Japanese: 中井 啓, Hepburn: Nakai Akira) is a Japanese automotive tuner,<br> founder of Porsche aftermarket tuning company RAUH-Welt BEGRIFF (RWB).</p>
         </div>
@@ -108,6 +106,45 @@
             </div>
           </div>
      </section>
+
+     <!-- My Skill Section -->
+    <section class="py-20">
+        <div class="container mx-auto">
+          <div class="card bg-base-100 shadow-lg p-8 max-w-lg mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center" id="skill">My Skill</h2>
+            <div class="mb-4">
+              <p class="font-medium">HTML</p>
+              <progress
+                class="progress progress-primary w-full"
+                value="90"
+                max="100"></progress>
+            </div>
+            <div class="mb-4">
+              <p class="font-medium">CSS</p>
+              <progress
+                class="progress progress-secondary w-full"
+                value="80"
+                max="100"></progress>
+            </div>
+            <div class="mb-4">
+              <p class="font-medium">JavaScript</p>
+              <progress
+                class="progress progress-accent w-full"
+                value="80"
+                max="100"></progress>
+            </div>
+            <div>
+              <p class="font-medium">TailwindCSS</p>
+              <progress
+                class="progress progress-info w-full"
+                value="70"
+                max="100"></progress>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Me -->
 
      <!-- Footer -->
      <footer class="footer bg-neutral text-neutral-content items-center p-4">
